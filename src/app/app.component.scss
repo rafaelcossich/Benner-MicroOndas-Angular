@@ -1,0 +1,17 @@
+.page {
+    padding: 20px;
+    display: flex;
+
+    .formulario {
+        display: flex;
+        gap: 30px;
+        
+        .combo-group{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 250px;
+        }
+    }
+}

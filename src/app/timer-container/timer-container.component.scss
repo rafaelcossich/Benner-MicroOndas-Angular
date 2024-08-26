@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .teclado {
+        button {
+            margin: 5px;
+        }
+
+        .btn-z {
+            width: 143px;
+        }
+
+    }
+
+    .input {
+        margin-top: 20px;
+
+        .tempo {
+            max-width: 143px;
+        }
+    }
+    .container-btn{
+        max-width: 100%;
+        .btn {
+            margin-top: 20px;
+            width: 65px;
+        }
+        .btn:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+}
+
+.greenc, .greenc *{
+    background-color: lightgreen !important;
+}
+
+.redc, .redc *{
+    background-color: coral !important;
+}

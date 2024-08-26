@@ -1,0 +1,38 @@
+<section class="container">
+    <div class="input">
+        <mat-form-field class="tempo" appearance="outline">
+            <mat-label>Tempo</mat-label>
+            <input type="time" matInput max="02:00" min="00:00" (input)="inputChange($event)" [formControl]="form.obterControle('tempo')">
+        </mat-form-field>
+    </div>
+    <div class="teclado">
+        <div class="container-btn">
+            <button type="button" (click)="clickBtn(1)" mat-mini-fab>1</button>
+            <button type="button" (click)="clickBtn(2)" mat-mini-fab>2</button>
+            <button type="button" (click)="clickBtn(3)" mat-mini-fab>3</button>
+        </div>
+        <div class="container-btn">
+            <button type="button" (click)="clickBtn(4)" mat-mini-fab>4</button>
+            <button type="button" (click)="clickBtn(5)" mat-mini-fab>5</button>
+            <button type="button" (click)="clickBtn(6)" mat-mini-fab>6</button>
+        </div>
+        <div class="container-btn">
+            <button type="button" (click)="clickBtn(7)" mat-mini-fab>7</button>
+            <button type="button" (click)="clickBtn(8)" mat-mini-fab>8</button>
+            <button type="button" (click)="clickBtn(9)" mat-mini-fab>9</button>
+        </div>
+        <button type="button" (click)="clickBtn(0)" mat-mini-fab class="btn-z">0</button>
+    </div>
+
+    <div class="container-btn">
+        <button class="btn greenc" type="button" mat-mini-fab (click)="iniciar()"><mat-icon>play_arrow</mat-icon></button>
+        <button class="btn redc" type="button" mat-mini-fab (click)="pausarCancelar()">
+            <mat-icon>pause</mat-icon>
+            <mat-icon>stop</mat-icon>
+        </button>
+    </div>
+
+    <div class="mensagem">
+        
+    </div>
+</section>
